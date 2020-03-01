@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elbit.systems.sniper.ShowStatus">
+
+    <include
+        layout="@layout/content_show_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnShowStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="680dp"
+        android:text="Map"
+        app:layout_anchorGravity="bottom|end" />
+
+    <Button
+        android:id="@+id/btnGoOnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="680dp"
+        android:text="Map"
+        app:layout_anchorGravity="bottom|end" />
+
+    <Button
+        android:id="@+id/btnGoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="680dp"
+        android:text="Map"
+        app:layout_anchorGravity="bottom|end" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="403dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/show_status"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

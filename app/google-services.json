@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700603770962",
+    "firebase_url": "https://sniper-system-55ab6.firebaseio.com",
+    "project_id": "sniper-system-55ab6",
+    "storage_bucket": "sniper-system-55ab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700603770962:android:02409caca5ccdac1dc178b",
+        "android_client_info": {
+          "package_name": "com.elbit.systems.sniper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700603770962-t6vimiavfpjp6rornij7pl4beng41vq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elbit.systems.sniper",
+            "certificate_hash": "74197e741619b39d7303dad5aaf3c08f2ef4de88"
+          }
+        },
+        {
+          "client_id": "700603770962-oshs4uigmncq2ggms7ik6l4j5ctqrrpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOf7yqUZmyh6WKAiio4RWUDmg7G_7PK1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700603770962-oshs4uigmncq2ggms7ik6l4j5ctqrrpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

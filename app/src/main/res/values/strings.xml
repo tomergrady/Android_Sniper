@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Live Training</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_my_status">ShowMyStatus</string>
+    <string name="title_activity_show_status">ShowStatus</string>
+    <string name="title_activity_show_on_map">ShowOnMap</string>
+</resources>
