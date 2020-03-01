@@ -1,6 +1,6 @@
 package com.elbit.systems.sniper;
 
-public class PlayerData {
+public class PlayerStateData {
     private String sPlayterID;
     private String sLon;
     private String sLat;

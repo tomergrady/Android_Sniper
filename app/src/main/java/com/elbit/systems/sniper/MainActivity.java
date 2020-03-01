@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity
     // Message Help Data
     private static String m_sPlayerType        = "Trainee";
     private static String m_sPlayerHealthState = "Alive";
+    private FirebaseUtil m_FirebaseUtil;
 
     // =============================================================================================
     // Location Data Members
@@ -194,12 +195,10 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-
         setSupportActionBar(toolbar);
+        FirebaseUtil.openFirebasereference("Players_Current", "Players_History");
 
         // Join Buttons
         btnGoOnMap    = (Button) findViewById(R.id.btnGoOnMap) ;
@@ -292,18 +291,6 @@ public class MainActivity extends AppCompatActivity
         // ==============================================================
         // Go To On Map Activity
         // ==============================================================
-        btnGoOnMap = (Button)findViewById(R.id.btnGoOnMap);
-        if (btnGoOnMap != null)
-        {
-            btnGoOnMap.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view)
-                {
-                    Intent intent = new Intent(getApplicationContext(), ShowOnMap.class);
-                    startActivity(intent);
-                }
-            });
-        }
 
         // ==============================================================
         // Go To Main Activity
@@ -320,6 +307,7 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         }
+
     }
 
     @Override
@@ -830,5 +818,14 @@ public class MainActivity extends AppCompatActivity
             });
             cLocalThreadTryConnectToSerialCommPort.start();
         }
+    }
+
+    private void savePlayer()
+    {
+        PlayerStateData cPlayerData = new PlayerStateData();
+        cPlayerData.setsAlt("5000");
+        cPlayerData.setsHealth("Alive");
+
+        FirebaseUtil.m_cDataCurrentRef.push().setValue(cPlayerData);
     }
 }

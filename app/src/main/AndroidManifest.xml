@@ -18,11 +18,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.elbit.systems.sniper.ShowOnMap"
-            android:label="@string/title_activity_show_on_map"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
             android:name="com.elbit.systems.sniper.ShowStatus"
             android:label="@string/title_activity_show_status"
             android:theme="@style/AppTheme.NoActionBar" />
